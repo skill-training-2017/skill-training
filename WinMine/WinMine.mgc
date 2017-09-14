@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.etc.winmin.view.GameControlPanel" x="713" y="391">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameResource"/>
+    </Class>
+    <Class name="com.etc.winmin.view.GameMenuBar" x="708" y="277">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.etc.winmin.controller.Game"/>
+    </Class>
+    <Class name="com.etc.winmin.model.GameLevel" x="716" y="-124">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.etc.winmin.view.RecordBreakerDialog" x="37" y="528">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.etc.winmin.controller.Game"/>
+    </Class>
+    <Class name="com.etc.winmin.model.GameRecords" x="331" y="609">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.GameRecord"
+            endpointName="intermediateLevelRecord" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.GameRecord"
+            endpointName="expenseLevelRecord" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.GameRecord"
+            endpointName="basicLevelRecord" kind="Simple"/>
+    </Class>
+    <Class name="com.etc.winmin.model.GameModel" x="320" y="-163">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.GameLevel"
+            endpointName="CUSTOME_LEVEL" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.GameLevel"
+            endpointName="currentGameLevel" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.MineCell"
+            endpointName="mineC1ells" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.MineCell"
+            endpointName="willSweepCell" kind="Simple"/>
+        <Communication destinationClassName="com.etc.winmin.model.MineCell"/>
+        <Communication destinationClassName="com.etc.winmin.controller.Game"/>
+    </Class>
+    <Class name="com.etc.winmin.model.MineCell" x="714" y="50">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.etc.winmin.model.GameRecord" x="708" y="616">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.etc.winmin.view.AboutDialog" x="336" y="272">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameResource"/>
+    </Class>
+    <Class name="com.etc.winmin.model.GameResource" x="1012" y="176">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="resource.R"
+            endpointName="DEFAULT_RESOURCE" kind="Simple"/>
+        <Association destinationClassName="resource.R"
+            endpointName="RESOURCE_MAP" kind="Simple"/>
+        <Association destinationClassName="resource.R"
+            endpointName="CURRENT_RESOURCE" kind="Simple"/>
+        <Communication destinationClassName="resource.R"/>
+    </Class>
+    <Class name="resource.R" x="968" y="353">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.etc.winmin.controller.Game" x="23" y="126">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.CustomLevelDialog"
+            endpointName="customLevelDialog" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.HelpDialog"
+            endpointName="helpDialog" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.GameRecords"
+            endpointName="records" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.MainWindow"
+            endpointName="mainWindow" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.HeroListDialog"
+            endpointName="heroListDialog" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.AboutDialog"
+            endpointName="aboutDialog" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.GameModel"
+            endpointName="model" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.RecordBreakerDialog"
+            endpointName="recordBreakerDialog" kind="Simple"/>
+        <Communication destinationClassName="com.etc.winmin.view.GameControlPanel"/>
+        <Communication destinationClassName="com.etc.winmin.model.MineCell"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameResource"/>
+        <Communication destinationClassName="com.etc.winmin.view.HeroListDialog"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameRecords"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameModel"/>
+        <Communication destinationClassName="com.etc.winmin.view.CustomLevelDialog"/>
+        <Communication destinationClassName="com.etc.winmin.view.MineCellLabel"/>
+    </Class>
+    <Class name="com.etc.winmin.view.HeroListDialog" x="339" y="474">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameLevel"/>
+        <Communication destinationClassName="com.etc.winmin.controller.Game"/>
+    </Class>
+    <Class name="com.etc.winmin.view.CustomLevelDialog" x="341" y="358">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.etc.winmin.controller.Game"/>
+    </Class>
+    <Class name="com.etc.winmin.view.HelpDialog" x="395" y="215">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameResource"/>
+    </Class>
+    <Class name="com.etc.winmin.view.MainWindow" x="384" y="149">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.GameMenuBar"
+            endpointName="menuBar" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.GameControlPanel"
+            endpointName="controlPanel" kind="Simple"/>
+        <Association
+            destinationClassName="com.etc.winmin.view.GameMinePanel"
+            endpointName="minePanel" kind="Simple"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameResource"/>
+    </Class>
+    <Class name="com.etc.winmin.view.GameMinePanel" x="708" y="190">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.etc.winmin.view.MineCellLabel" x="945" y="-13">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.etc.winmin.model.MineCell"
+            endpointName="model" kind="Simple"/>
+        <Communication destinationClassName="com.etc.winmin.model.GameResource"/>
+        <Communication destinationClassName="com.etc.winmin.controller.Game"/>
+    </Class>
+</ClassDiagram>
